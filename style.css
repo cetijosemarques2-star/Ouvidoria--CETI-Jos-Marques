@@ -1,0 +1,101 @@
+:root {
+  --cor1: #2c3e50;
+  --cor2: #3498db;
+  --bg: #f4f4f4;
+  --text: #000;
+}
+
+.dark {
+  --bg: #1e1e1e;
+  --text: #fff;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  background: var(--cor1);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+header img {
+  height: 60px;
+}
+
+nav {
+  display: flex;
+  background: var(--cor2);
+}
+
+nav button {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  background: none;
+  color: white;
+  cursor: pointer;
+}
+
+section {
+  display: none;
+  padding: 15px;
+}
+
+.active {
+  display: block;
+}
+
+.pergunta {
+  margin-bottom: 10px;
+}
+
+.chat-box {
+  height: 300px;
+  border: 1px solid #ccc;
+  overflow-y: auto;
+  background: white;
+  padding: 10px;
+}
+
+.msg {
+  background: #ddd;
+  margin: 5px;
+  padding: 8px;
+  border-radius: 10px;
+}
+
+.chat-input {
+  display: flex;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 10px;
+}
+
+.chat-input button {
+  padding: 10px;
+}
+
+.dark-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  padding: 12px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+}
+
+@media(max-width:600px){
+  nav {
+    flex-direction: column;
+  }
+}
