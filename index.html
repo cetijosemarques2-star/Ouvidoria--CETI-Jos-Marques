@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portal Escolar</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <img src="logo.png" alt="Logo da Escola">
+  <h2>Portal Escolar</h2>
+</header>
+
+<nav>
+  <button onclick="trocarAba('feedback')">Feedback</button>
+  <button onclick="trocarAba('chat')">Chat</button>
+  <button onclick="trocarAba('noticias')">Notícias</button>
+  <button onclick="trocarAba('conquistas')">Conquistas</button>
+</nav>
+
+<section id="feedback" class="active">
+<h3>📋 Feedback Escolar</h3>
+
+<div class="pergunta">O ambiente é limpo?
+<br><input type="radio" name="q1"> Sim
+<input type="radio" name="q1"> Não</div>
+
+<textarea placeholder="Sugestões..." class="campo"></textarea>
+<br><br>
+<button>Enviar</button>
+</section>
+
+<section id="chat">
+<h3>💬 Chat</h3>
+
+<div id="chatBox" class="chat-box"></div>
+
+<div class="chat-input">
+  <input id="msgInput" placeholder="Digite...">
+  <button onclick="enviarMsg()">Enviar</button>
+</div>
+</section>
+
+<section id="noticias">
+<h3>📰 Notícias</h3>
+<div class="msg">Feira sexta!</div>
+</section>
+
+<section id="conquistas">
+<h3>🏆 Conquistas</h3>
+<div class="msg">Aluno venceu olimpíada</div>
+</section>
+
+<button class="dark-btn" onclick="toggleDark()">🌙</button>
+
+<script src="script.js"></script>
+</body>
+</html>
